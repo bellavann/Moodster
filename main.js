@@ -2,21 +2,39 @@ let input = document.querySelector('.userInput');
 let button = document.querySelector('.button');
 let display= document.querySelector('.searchResults');
 
+
+let happy = document.querySelector('.H');
+let mad = document.querySelector('.M');
+let sad = document.querySelector('.S');
+
 var userInput;
 var query;
 var response;
 
-
+happy.addEventListener('click', hSet); 
+mad.addEventListener('click', mSet); 
+sad.addEventListener('click', sSet); 
 
 button.addEventListener('click', Search); 
 
+function hSet(){
+  query = "rock";
+}
 
+function sSet(){
+  query = "blues";
+}
+
+function mSet(){
+  query = "metal";
+}
 function Search () {
   userInput = input.value;
   
   event.preventDefault();
 
-  query = userInput.split(" ").join("+");
+ // query = userInput.split(" ").join("+");
+ console.log(query);
   let url = ("https://itunes.apple.com/search?term=" + query)
 
     fetch(url)
