@@ -1,4 +1,4 @@
-let gen = document.querySelector('.gen');
+let gen = document.querySelector('#gen');
 
 
 gen.addEventListener('click', generate); 

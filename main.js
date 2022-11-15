@@ -7,6 +7,11 @@ let happy = document.querySelector('#H');
 let mad = document.querySelector('#M');
 let sad = document.querySelector('#S');
 
+let fear = document.querySelector('#F');
+let disgust = document.querySelector('#D');
+let surprise = document.querySelector('#SU');
+
+
 
 
 
@@ -20,6 +25,9 @@ mad.addEventListener('click', mSet);
 sad.addEventListener('click', sSet); 
 
 
+fear.addEventListener('click', fSet); 
+disgust.addEventListener('click', dSet); 
+surprise.addEventListener('click', suSet); 
 //button.addEventListener('click', Search); 
 
 function hSet(){
@@ -37,6 +45,25 @@ function mSet(){
   query = "metal";
   moodSearch ();
 }
+
+
+function fSet(){
+  query = "horror";
+  console.log('TEST');
+  moodSearch ();
+}
+
+function dSet(){
+  query = "Screamo";
+  moodSearch ();
+}
+
+function suSet(){
+  query = "Dubstep";
+  moodSearch ();
+}
+
+
 function moodSearch () {
  // userInput = input.value;
   
@@ -68,6 +95,7 @@ let song = Math.floor(Math.random() * num);
       });
 
     });
+    /*
     function playSong(x) {
 console.log('ID LOOK' + x);
       let index = Number(x);
@@ -76,9 +104,10 @@ console.log('ID LOOK' + x);
       player.setAttribute('src', musicPreview);
       player.play();
     }
-
+*/
 
 }
+/*
 function Search () {
   userInput = input.value;
   
@@ -144,3 +173,4 @@ function Search () {
     });
 
 }
+*/
