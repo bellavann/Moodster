@@ -3,9 +3,13 @@ let button = document.querySelector('.button');
 let display= document.querySelector('.searchResults');
 
 
-let happy = document.querySelector('.H');
-let mad = document.querySelector('.M');
-let sad = document.querySelector('.S');
+let happy = document.querySelector('#H');
+let mad = document.querySelector('#M');
+let sad = document.querySelector('#S');
+
+
+
+
 
 var userInput;
 var query;
@@ -15,18 +19,65 @@ happy.addEventListener('click', hSet);
 mad.addEventListener('click', mSet); 
 sad.addEventListener('click', sSet); 
 
-button.addEventListener('click', Search); 
+
+//button.addEventListener('click', Search); 
 
 function hSet(){
   query = "rock";
+  console.log('TEST');
+  moodSearch ();
 }
 
 function sSet(){
   query = "blues";
+  moodSearch ();
 }
 
 function mSet(){
   query = "metal";
+  moodSearch ();
+}
+function moodSearch () {
+ // userInput = input.value;
+  
+  event.preventDefault();
+
+ // query = userInput.split(" ").join("+");
+ console.log(query);
+
+  let url = ("https://itunes.apple.com/search?term=" + query)
+
+    fetch(url)
+        .then(function(response){
+
+          response.json().then(function(data){
+          console.log(data.results[1].trackName);
+          console.log(data.results);
+          let player = document.getElementById('music-player');
+          let num = data.results.length;
+let song = Math.floor(Math.random() * num);
+          let musicPreview = data.results[song].previewUrl;
+          player.setAttribute('src', musicPreview);
+          player.play();
+
+          
+
+
+         
+
+      });
+
+    });
+    function playSong(x) {
+console.log('ID LOOK' + x);
+      let index = Number(x);
+      let player = document.getElementById('music-player');
+      let musicPreview = data.results[index].previewUrl;
+      player.setAttribute('src', musicPreview);
+      player.play();
+    }
+
+
 }
 function Search () {
   userInput = input.value;
@@ -35,6 +86,7 @@ function Search () {
 
  // query = userInput.split(" ").join("+");
  console.log(query);
+
   let url = ("https://itunes.apple.com/search?term=" + query)
 
     fetch(url)
@@ -92,5 +144,3 @@ function Search () {
     });
 
 }
-
-
