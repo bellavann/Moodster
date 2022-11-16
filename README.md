@@ -1,5 +1,5 @@
 # Moodster
-## Moodster is a Music Suggestion Website made possible through the use of Machine Learning.
+## Moodster is a Music Suggestion Website made possible through the use of Machine Learning.[^1]
 
 ### Description
 Moodster is ideal for users that presently feel a certain way and would like to hear music that amplifies those feelings.
@@ -27,3 +27,5 @@ Once you navigate to the website, you will be presented with 2 options:
 
 - **Song Generator**
   * Click the button on the page to hear a song generated through the use of [Magenta.js](https://magenta.tensorflow.org/js-announce).
+
+[^1]: Changes are still being made to this repository.
