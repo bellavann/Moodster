@@ -8,6 +8,9 @@ music_vae.initialize();
 // Create a player to play the sampled sequence.
 vaePlayer = new mm.Player();
 vae_temperature = 1.5;
+
+
+
 function generate(){
   console.log("Generatign music");
   if (vaePlayer.isPlaying()) {
