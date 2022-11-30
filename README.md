@@ -9,7 +9,7 @@ To hear music related to a certain mood, use the "Music For Your Mood" feature. 
 The website uses the [iTunes API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html) to pull songs that satisfy different moods. Moodster also uses the [Magenta.js](https://magenta.tensorflow.org/js-announce) JavaScript suite in the development of its Song Generator capabilities.
 
 ### Access
-Download the project and got to [home.html](root/index.html) file and simply open in a browser (EX. Edge, Chrome, Firefox, etc.) of your choice.
+Download the project and go to the [home.html](root/index.html) file and simply open in a browser (EX. Edge, Chrome, Firefox, etc.) of your choice.
 
 ### How-To-Use
 Once you navigate to the website, you will be presented with 2 options:
