@@ -23,7 +23,7 @@ function hype(){
     return;
   }
   hype
-  .sample(1, 1.5)
+  .sample(1, 1.0)
   .then((sample) => vaePlayer.start(sample[0]));
 }
 function normal(){

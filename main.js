@@ -28,35 +28,35 @@ surprise.addEventListener('click', suSet);
 //button.addEventListener('click', Search); 
 
 function hSet(){
-  query = "rock";
-  console.log('TEST');
+  query = "rock + Happy + HipHop";
+ // console.log('TEST');
   moodSearch ();
 }
 
 function sSet(){
-  query = "blues";
+  query = "blues + Sad + rain";
   moodSearch ();
 }
 
 function mSet(){
-  query = "metal";
+  query = "metal + deathmetal + Mad";
   moodSearch ();
 }
 
 
 function fSet(){
-  query = "horror";
+  query = "horror + orchestra";
   console.log('TEST');
   moodSearch ();
 }
 
 function dSet(){
-  query = "Screamo";
+  query = "Screamo + Punk";
   moodSearch ();
 }
 
 function suSet(){
-  query = "Dubstep";
+  query = "Dubstep + EDM + Hype + Surprise";
   moodSearch ();
 }
 
@@ -92,3 +92,4 @@ let song = Math.floor(Math.random() * num);
       });
 
     });
+  }
