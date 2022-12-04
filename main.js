@@ -56,7 +56,7 @@ function dSet(){
 }
 
 function suSet(){
-  query = "Dubstep + EDM + Hype + Surprise";
+  query = "Dubstep + EDM";
   moodSearch ();
 }
 
