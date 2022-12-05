@@ -4,7 +4,7 @@
 ### Description
 Moodster is ideal for users that presently feel a certain way and would like to hear music that amplifies those feelings.
 
-To hear music related to a certain mood, use the "Music For Your Mood" feature. Moodster also has a "Song Generator" feature that currently plays a unique song with the click of a button.
+To hear music related to a certain mood, use the "Music For Your Mood" feature. Moodster also has a "Song Generator" feature that currently plays a unique, never-before-heard song with the click of a button.
 
 Moodster is deployed using Github's [Pages](https://pages.github.com/) functionality. The website uses the [iTunes API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html) to pull songs that satisfy different moods. Moodster also uses the [Magenta.js](https://magenta.tensorflow.org/js-announce) JavaScript suite in the development of its Song Generator capabilities.
 
@@ -30,6 +30,6 @@ Once you navigate to the website, you will be presented with 2 options:
   * This page pulls from the [iTunes API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html).
 
 - **Song Generator**
-  * Click the button on the page to hear a song generated through the use of [Magenta.js](https://magenta.tensorflow.org/js-announce).
+  * Click one of the buttons on the page to hear a song generated through the use of [Magenta.js](https://magenta.tensorflow.org/js-announce).
 
 [^1]: Changes are still being made to this repository.
